@@ -1,11 +1,15 @@
 # custom-fed37
 Custom minimal installation of fedora 37 with the looks of Win11
+
+
 <hr>
+
 
 ## Prerequisites
 - Fedora Everything ISO (can be found at the alternatives downloads) 
 - Install minimal
-- Install wget (dnf install -y wget)
+- Install wget & unzip (dnf install -y wget unzip)
+
 
 
 ## References:
