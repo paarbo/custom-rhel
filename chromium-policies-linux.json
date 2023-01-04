@@ -64,3 +64,4 @@ PrintingBackgroundGraphicsDefault true
 PasswordProtectionWarningTrigger 1
 SafeBrowsingExtendedReportingEnabled false
 SafeBrowsingProtectionLevel 1
+ShowHomeButton false
