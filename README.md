@@ -5,3 +5,7 @@ Custom minimal installation of fedora 37 with the looks of Win11
 Fedora Everything ISO (can be found at the alternatives downloads) 
 Install minimal
 Install wget
+
+
+### References:
+https://chromeenterprise.google/policies
