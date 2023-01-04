@@ -20,3 +20,5 @@ Custom minimal installation of fedora 37 with the looks of Win11
 - https://www.tecmint.com/install-and-switch-desktop-environments-in-fedora
 - https://able.bio/KY64/minimal-installation-fedora-linux--73410e6d
 - https://docs.fedoraproject.org/en-US/quick-docs/gnome-shell-extensions
+
+<img src="http://gfxmonk.net/dist/status/project/gnome-shell-scroll-workspaces.png">
