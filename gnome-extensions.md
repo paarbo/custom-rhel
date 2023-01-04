@@ -1,3 +1,4 @@
 https://extensions.gnome.org/extension/3628/arcmenu
 https://extensions.gnome.org/extension/7/removable-drive-menu
 https://extensions.gnome.org/extension/1160/dash-to-panel
+https://extensions.gnome.org/extension/1465/desktop-icons
