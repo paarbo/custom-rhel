@@ -21,8 +21,8 @@ ufw enable
 #sysctl -a
 #sysctl -A
 #sysctl mib
-sysctl net.ipv4.conf.all.rp_filter
-sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
+#sysctl net.ipv4.conf.all.rp_filter
+#sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
 
 # --- PREVENT IP SPOOFS
 cat <<EOF > /etc/host.conf
