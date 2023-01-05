@@ -10,6 +10,7 @@ systemctl set-default graphical.target
 dnf remove -y gnome-tour
 dnf autoremove -y
 # --- Setup UFW rules
+ufw limit 22/tcp
 ufw allow 80/tcp  
 ufw allow 443/tcp  
 ufw default deny incoming  
@@ -18,11 +19,11 @@ ufw enable
 
 # --- Harden /etc/sysctl.conf #Not recommended
 #sysctl kernel.modules_disabled=1
-#sysctl -a
-#sysctl -A
-#sysctl mib
-#sysctl net.ipv4.conf.all.rp_filter
-#sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
+sysctl -a
+sysctl -A
+sysctl mib
+sysctl net.ipv4.conf.all.rp_filter
+sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
 
 # --- PREVENT IP SPOOFS
 cat <<EOF > /etc/host.conf
