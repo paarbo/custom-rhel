@@ -32,7 +32,7 @@ EOF
 
 # --- Enable fail2ban
 #wget https://raw.githubusercontent.com/ChrisTitusTech/secure-linux/master/jail.local
-cp fail2ban.local /etc/fail2ban/
+cp jail.local /etc/fail2ban/jail.local
 systemctl enable fail2ban
 systemctl start fail2ban
 
