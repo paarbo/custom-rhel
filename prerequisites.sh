@@ -31,8 +31,8 @@ multi on
 EOF
 
 # --- Enable fail2ban
-#wget https://raw.githubusercontent.com/ChrisTitusTech/secure-linux/master/jail.local
-cp fail2ban.local /etc/fail2ban/
+wget https://raw.githubusercontent.com/ChrisTitusTech/secure-linux/master/jail.local
+cp jail.local /etc/fail2ban/
 systemctl enable fail2ban
 systemctl start fail2ban
 
