@@ -7,8 +7,8 @@ dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-
 #gnome-documents not found
 systemctl enable gdm
 systemctl set-default graphical.target
-dnf remove gnome-tour
-dnf autoremove
+dnf remove -y gnome-tour
+dnf autoremove -y
 # --- Setup UFW rules
 ufw allow 80/tcp  
 ufw allow 443/tcp  
