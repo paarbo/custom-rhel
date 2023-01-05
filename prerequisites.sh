@@ -16,7 +16,7 @@ ufw default deny incoming
 ufw default allow outgoing
 ufw enable
 
-# --- Harden /etc/sysctl.conf
+# --- Harden /etc/sysctl.conf #Not recommended
 #sysctl kernel.modules_disabled=1
 #sysctl -a
 #sysctl -A
@@ -31,7 +31,7 @@ multi on
 EOF
 
 # --- Enable fail2ban
-#wget https://raw.githubusercontent.com/ChrisTitusTech/secure-linux/master/jail.local
+wget https://raw.githubusercontent.com/ChrisTitusTech/secure-linux/master/jail.local
 cp jail.local /etc/fail2ban/jail.local
 systemctl enable fail2ban
 systemctl start fail2ban
