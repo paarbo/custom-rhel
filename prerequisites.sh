@@ -16,7 +16,7 @@ ufw allow 443/tcp
 ufw default deny incoming  
 ufw default allow outgoing
 ufw enable
-
+systemctl enable ufw
 # --- Harden /etc/sysctl.conf #Not recommended
 #sysctl kernel.modules_disabled=1
 sysctl -a
