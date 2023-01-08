@@ -1,8 +1,14 @@
 dnf update -y
+dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-dnf install -y https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm
+dnf install https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm -y
 dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
+#DELL drivers repo
+#curl -O https://linux.dell.com/repo/hardware/dsu/bootstrap.cgi
+#bash bootstrap.cgi
+dnf groupupdate core -y
+dnf update -y
 dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine sassc ufw fail2ban net-tools
 #gnome-documents not found
 systemctl enable gdm
