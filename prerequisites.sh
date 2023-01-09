@@ -9,7 +9,7 @@ dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 #bash bootstrap.cgi
 dnf groupupdate core -y
 dnf update -y
-dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine sassc ufw fail2ban net-tools
+dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools
 #gnome-documents not found
 systemctl enable gdm
 systemctl set-default graphical.target
