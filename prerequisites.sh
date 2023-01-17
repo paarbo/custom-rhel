@@ -11,6 +11,7 @@ dnf groupupdate core -y
 dnf update -y
 dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools
 #gnome-documents not found
+# gnome-console https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
 systemctl enable gdm
 systemctl set-default graphical.target
 dnf remove -y gnome-tour
