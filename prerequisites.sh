@@ -14,7 +14,7 @@ dnf install -y gdm gnome-shell gnome-console brave-browser nautilus onlyoffice-d
 #gnome-documents not found
 # gnome-console https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
 flatpak update -y
-flatpak install flathub app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner
+flatpak install flathub -y app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner
 
 systemctl enable gdm
 systemctl set-default graphical.target
