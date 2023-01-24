@@ -9,7 +9,7 @@ dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 #bash bootstrap.cgi
 dnf groupupdate core -y
 dnf update -y
-dnf install -y gdm gnome-shell gnome-console brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools file-roller seahorse git
+dnf install -y unzip gdm gnome-shell gnome-console brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools file-roller seahorse git
 #gnome-documents not found
 # gnome-console https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
