@@ -7,4 +7,4 @@ exit
 git clone https://github.com/vinceliuice/Fluent-gtk-theme.git
 git clone https://github.com/vinceliuice/Fluent-icon-theme.git
 sh ./Fluent-gtk-theme/install.sh -l --tweaks round noborder square
-sh ./Fluent-icon-theme/install.sh
+sh ./Fluent-icon-theme/install.sh -r
