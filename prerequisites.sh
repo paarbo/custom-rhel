@@ -50,5 +50,5 @@ systemctl start fail2ban
 
 echo "listening ports"
 netstat -tunlp
-dnf purge net-tools -y
+dnf remove net-tools -y
 dnf autoremove -y
