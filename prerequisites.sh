@@ -4,14 +4,18 @@ dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 dnf install https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm -y
 dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 #DELL drivers repo
 #curl -O https://linux.dell.com/repo/hardware/dsu/bootstrap.cgi
 #bash bootstrap.cgi
 dnf groupupdate core -y
 dnf update -y
-dnf install -y gdm gnome-shell gnome-terminal brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools
+dnf install -y gdm gnome-shell gnome-console brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools file-roller seahorse git
 #gnome-documents not found
 # gnome-console https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
+flatpak update -y
+flatpak install flathub app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner
+
 systemctl enable gdm
 systemctl set-default graphical.target
 dnf remove -y gnome-tour
@@ -46,3 +50,4 @@ systemctl start fail2ban
 
 echo "listening ports"
 netstat -tunlp
+dnf purge net-tools
