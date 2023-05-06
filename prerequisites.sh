@@ -10,9 +10,9 @@ dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 dnf groupupdate core -y
 dnf update -y
-dnf install -y unzip gdm gnome-shell gnome-console gnome-software brave-browser nautilus onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app gnome-browser-connector gnome-usage gnome-password-generator gnome-disk-utility gnome-photos totem gnome-calculator gnome-weather gnome-text-editor gtk-murrine-engine gnome-menus sassc ufw fail2ban net-tools file-roller seahorse git
-#gnome-documents not found
-# gnome-console https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
+dnf install -y unzip gdm gnome-shell gnome-terminal evince gnome-software brave-browser nautilus librewolf onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app chrome-gnome-shell gnome-disk-utility gnome-photos totem gnome-calculator gedit gtk-murrine-engine gnome-menus sassc ufw fail2ban file-roller seahorse git
+# net-tools not found gnome-console gnome-usage gnome-password-generator gnome-text-editor gnome-weather gnome-browser-connector
+# https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
 flatpak update -y
 flatpak install flathub -y app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner
 
@@ -22,12 +22,12 @@ dnf remove -y gnome-tour
 dnf autoremove -y
 # --- Setup UFW rules
 #ufw limit 22/tcp
-#ufw allow 80/tcp  
-#ufw allow 443/tcp  
-#ufw default deny incoming  
-#ufw default allow outgoing
-#ufw enable
-#systemctl enable ufw
+ufw allow 80/tcp  
+ufw allow 443/tcp  
+ufw default deny incoming  
+ufw default allow outgoing
+ufw enable
+systemctl enable ufw
 # --- Harden /etc/sysctl.conf #Not recommended
 #sysctl kernel.modules_disabled=1
 #sysctl -a
@@ -48,7 +48,8 @@ cp jail.local /etc/fail2ban/jail.local
 systemctl enable fail2ban
 systemctl start fail2ban
 
-echo "listening ports"
-netstat -tunlp
-dnf remove net-tools -y
+#echo "listening ports"
+#netstat -tunlp
+#dnf remove net-tools -y
 dnf autoremove -y
+reboot
