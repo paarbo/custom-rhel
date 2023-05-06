@@ -1,12 +1,12 @@
-# custom-fed37
-Custom minimal installation of fedora 37 with the looks of Win11
+# custom-rhel9
+Custom minimal installation of Rocky Linux (RHEL9) with the looks of Win11
 
 
 <hr>
 
 
 ## Prerequisites
-- Fedora Everything ISO (can be found at the alternatives downloads) 
+- Rocky Linux 9.1 Boot ISO (can be found at the download page) 
 - Install minimal
 - Install wget (dnf install -y dconf-editor okular)
 
