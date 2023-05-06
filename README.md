@@ -14,7 +14,7 @@ Custom minimal installation of Rocky Linux (RHEL9) with the looks of Win11
 
 ## References:
 - https://chromeenterprise.google/policies
-- https://alt.fedoraproject.org
+- https://rockylinux.org/download
 - https://brave.com/linux/#fedora-centos-streamrhel
 - https://helpcenter.onlyoffice.com/installation/desktop-install-rhel.aspx
 - https://able.bio/KY64/minimal-installation-fedora-linux--73410e6d
