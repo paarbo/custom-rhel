@@ -1,7 +1,7 @@
 dnf update -y
 dnf config-manager --set-enabled crb
-dnf install epel-release
-dnf install rpmfusion-free-release
+dnf install -y epel-release
+dnf install -y rpmfusion-free-release
 dnf install -y --nogpgcheck https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-$(rpm -E %rhel).noarch.rpm
 dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
