@@ -7,12 +7,12 @@ dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 dnf install https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm -y
 dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 dnf groupupdate core -y
 dnf update -y
 dnf install -y unzip gdm gnome-shell gnome-terminal okular gnome-software brave-browser nautilus librewolf onlyoffice-desktopeditors gnome-tweaks gnome-extensions-app chrome-gnome-shell gnome-disk-utility gnome-photos totem gnome-calculator gedit gtk-murrine-engine gnome-menus sassc ufw fail2ban file-roller seahorse git
 # net-tools not found gnome-console gnome-usage gnome-password-generator gnome-text-editor gnome-weather gnome-browser-connector
 # https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak update -y
 flatpak install flathub -y app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner
 
