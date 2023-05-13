@@ -13,7 +13,7 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 dnf install https://download.onlyoffice.com/repo/centos/main/noarch/onlyoffice-repo.noarch.rpm -y
 dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 dnf groupupdate core -y
-dnf update
+dnf update -y
 dnf install -y okular brave-browser librewolf onlyoffice-desktopeditors gtk-murrine-engine sassc ufw fail2ban file-roller
 # net-tools not found gnome-console gnome-usage gnome-password-generator gnome-text-editor gnome-weather gnome-browser-connector
 # https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
