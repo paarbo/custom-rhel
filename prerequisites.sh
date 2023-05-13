@@ -19,14 +19,15 @@ dnf install -y okular brave-browser librewolf onlyoffice-desktopeditors gtk-murr
 # https://apps.gnome.org news-flash dialect obfuscate warp metadata-cleaner
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak update -y
-flatpak install flathub -y app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner #com.moonlight_stream.Moonlight
+flatpak install flathub -y app.drey.Warp app.drey.Dialect com.gitlab.newsflash com.belmoussaoui.Obfuscate fr.romainvigier.MetadataCleaner #com.moonlight_stream.Moonlight com.discordapp.Discord
+flatpak update -y
 
 dnf autoremove -y
 # --- Setup UFW rules
 #ufw limit 22/tcp
-ufw allow 80/tcp  
-ufw allow 443/tcp  
-ufw default deny incoming  
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw default deny incoming
 ufw default allow outgoing
 ufw enable
 systemctl enable ufw
