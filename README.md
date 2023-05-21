@@ -6,7 +6,7 @@ Custom minimal installation of Rocky Linux (RHEL9) with the looks of Win11
 
 
 ## Prerequisites
-- Rocky Linux 9.1 Boot ISO (can be found at the download page) 
+- Rocky Linux 9.2 Boot ISO (can be found at the download page) 
 - Install minimal
 
 
